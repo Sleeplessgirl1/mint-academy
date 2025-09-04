@@ -2,39 +2,55 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
+/* Marketing Digital Courses - Design System 
+Verde menta como color principal con paleta complementaria profesional
 */
 
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --foreground: 220 13% 18%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 220 13% 18%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 220 13% 18%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Verde menta principal */
+    --primary: 120 100% 80%;
+    --primary-foreground: 220 13% 18%;
+    --primary-hover: 120 100% 75%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Verde menta oscuro para variaciones */
+    --secondary: 120 30% 25%;
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Grises neutros */
+    --muted: 220 14% 96%;
+    --muted-foreground: 220 8.9% 46.1%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 120 100% 95%;
+    --accent-foreground: 120 30% 25%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 120 100% 80%;
+
+    /* Gradientes personalizados */
+    --gradient-primary: linear-gradient(135deg, hsl(120 100% 80%), hsl(120 100% 85%));
+    --gradient-hero: linear-gradient(135deg, hsl(120 100% 95%), hsl(120 100% 98%));
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(120 100% 99%));
+
+    /* Sombras elegantes */
+    --shadow-card: 0 4px 6px -1px hsl(120 100% 80% / 0.1), 0 2px 4px -1px hsl(120 100% 80% / 0.06);
+    --shadow-hover: 0 10px 15px -3px hsl(120 100% 80% / 0.15), 0 4px 6px -2px hsl(120 100% 80% / 0.1);
+
+    /* Transiciones suaves */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
     --radius: 0.5rem;
 
